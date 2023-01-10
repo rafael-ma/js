@@ -1,0 +1,5 @@
+6-12 Manhã
+12-17 Tarde
+17-19 Fim de tarde
+19-12 Noite
+12-6 Madrugada
