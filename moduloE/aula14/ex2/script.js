@@ -10,7 +10,7 @@ function gerar() {
     } else {
         resultado.innerHTML = ''
         for (c = 1; c <= 10; c++) {
-            resultado.innerHTML += `<p>${num} x ${c} = ` + (num*c)
+            resultado.innerHTML += `<p>${num} x ${c} = ${num*c}</p>`
         }
         resultado.style.width = '100%'
     }

@@ -37,6 +37,7 @@ main {
     min-height: 15vh;
     margin: auto;
     background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 .dados {
@@ -66,6 +67,7 @@ button {
     padding: 1px 5px;
     outline: 1px solid #638bbf;
     border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 button:hover {
