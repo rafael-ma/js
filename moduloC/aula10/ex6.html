@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #area {
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            border-radius: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <!-- 
+        Eventos:
+    mouseenter -> Funciona como um hover, aciona quando o mouse entrar na caixa.
+    mousemove -> Aciona quando o mouse for movido dentro da caixa.
+    mousedown -> Aciona quando o botão do mouse for clicado.
+    mouseup -> Aciona quando o botão do mouse for solto. 
+    click -> Aciona quando u clique for efetuado.
+    mouseout -> Aciona quando o mouse é retirado da caixa, como o hover porém com o funciolnamento ao contrário.
+-->
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var area = document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', hoverIn)
+        area.addEventListener('mouseout', hoverOut)
+        
+        function clicar() {
+            area.innerText = 'Clicou'
+        }
+
+        function hoverIn() {
+            area.style.background = 'aqua'
+            area.style.color = 'black'
+        }
+
+        function hoverOut() {
+            area.style.background = 'green'
+        }
+    </script>
+</body>
+</html>

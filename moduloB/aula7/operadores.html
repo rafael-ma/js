@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style_op.css">
+        <title>Operadores aritméticos</title>
+    </head>
+    <body>
+        <header>
+            <h1>Operadores</h1>
+        </header>
+        <main>
+            <section class="aritimeticos">
+                <h2>Aritméticos</h2>
+                <p class="text">Os itens a baixo representam os aperadores aritméticos. Seguindo em ordem de procedência.</p>
+                <ol>
+                    <li><span class="code">()</span> Parênteses</li>
+                    <li><span class="code">**</span> Potenciação</li>
+                    <li><span class="code">*</span> Multiplicação, <span class="code">/</span> Divisão, <span class="code">%</span> Módulo</li>
+                    <li><span class="code">+</span> Adição, <span class="code">-</span> Subtração</li>
+                </ol>
+            </section>
+
+            <section class="atribuicao">
+                <h2>Atribuição</h2>
+                <div class="code">
+                    <p>var a = 3 <span class="comment">//3</span></p>
+                    <p>var a = a + 2 <span class="comment">//5</span></p>
+                    <p>var a += 2 <span class="comment">//5</span></p>
+                </div>
+            </section>
+                <h2>Relacionais</h2>
+                <p class="text">São operadores que retornam valores <em>boolean</em> (<em>true</em> ou <em>false</em>).</p>
+                <div class="code">
+                    <p>5 > 2 <span class="comment">//true</span></p>
+                    <p>7 < 4 <span class="comment">//false</span></p>
+                    <p>8 >= 8 <span class="comment">//true</span></p>
+                    <p>9 <= 7 <span class="comment">//false</span></p>
+                    <p>5 == 5 <span class="comment">//true</span></p>
+                    <p>4 != 4 <span class="comment">//false</span></p>
+                </div>
+            <section class="relacionais"></section>
+
+            <section class="logicos">
+                <h2>Lógicos</h2>
+                <p class="text">Assim como os aritméticos, eles possuem ordem de procedência.</p>
+                <ol>
+                    <li><span class="code">! <span class="comment">//Negação</span></span></li>
+                    <li><span class="code">&& <span class="comment">//Conjunção</span></span></li>
+                    <li><span class="code">|| <span class="comment">//Disjunção</span></span></li>
+                </ol>
+            </section>
+
+            <section class="precedencia">
+                <h2>Procedência</h2>
+                <p class="text">Os tipos de operadores também possuem sua ordem de procedência</p>
+                <ol>
+                    <li>Aritméticos</li>
+                    <li>Relacionais</li>
+                    <li>Lógicos</li>
+                    <li>Ternário</li>
+                </ol>
+            </section>
+
+            <section class="ternarios">
+                <p class="text">São os operadores que retornam um valor baseado em 3 possíveis valores, <span class="code">?</span> e <span class="code">:</span> representados da seguinte forma:</p>
+                <p class="code text"><span class="comment">teste</span>?<span class="comment">true</span>:<span class="comment">false</span></p>
+                <p class="text">Exemplo:</p>
+                <div class="code">
+                    <p>var media = <span class="comment">6</span></p>
+                    <p>var situacao = <span class="comment">media</span> >= 7?<span class="comment">"Aprovado"</span>:<span class="comment">"Reprovado"</span></p>
+                    <p>situacao</p>
+                    <p><span class="comment">'Reprovado'</span></p>
+
+                </div>
+            </section>
+            
+            
+        </main>
+    </body>
+</html>

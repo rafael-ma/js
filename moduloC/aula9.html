@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeiros passos com DOM</title>
+        <style>
+            * {
+                padding: 0;
+            }
+
+            body {
+                padding: 20px;
+                background-color: rgb(69, 54, 91);
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Iniciando os estudos com DOM</h1>
+        <p>Para de me imitar</p>
+        <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+        <div id="msg">
+            <p>CLIQUE EM MIM</p>
+        </div>
+    <!-- 
+        MÉTODOS DE ACESSO
+        por Marca -> getElementsByName()
+        por ID -> getElementById()
+        por Nome -> getElementsByName()
+        por Classe -> getElementsByClassName()
+        por Seletor:
+            querySelector() -> Um elemento
+            querySelectorAll() -> Vários elementos
+            Seleciona elementos igual ao seletor CSS
+    -->
+
+        <script>
+            var p1 = window.document.getElementsByTagName('p')[0] // Pega um elemento pela tag, o número indicado entre colchetes representa a child selecionada, nesse caso a child [0].
+            var p2 = window.document.getElementsByTagName('p')[1]
+
+            document.write('Está escrito:' + p1.innerHTML) // Além do innerText também pode ser usado o innerHTML, que pega além do texto formatações HTML como tags strongs.
+
+            /* 
+            var div = document.getElementById('msg')
+            div.style.background = 'white'
+            div.style.color = 'black'
+            div.innerText = 'Aguardando...'
+            */
+
+            var div = document.querySelector('#msg')
+            document.write(div.innerHTML)
+
+        </script>
+    </body>
+</html>

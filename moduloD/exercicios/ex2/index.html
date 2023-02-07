@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="year">Ano de nascimento</label>
+                <input type="number" name="year" id="year" min="1900">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="sex" id="m" checked>
+                <label for="m">Masculino</label>
+
+                <input type="radio" name="sex" id="f">
+                <label for="f">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="VERIFICAR" onclick="verificar()">
+            </p>
+        </div>
+        <div id="result">
+            <p>Preencha os dados acima para ver o resultado.</p>
+        </div>
+    </section>
+    <footer>
+        <p><a href="https://github.com/rafael-ma" target="_blank" rel="external">GitHub</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

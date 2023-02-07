@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site</title>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <main>
+        <div id="dados">
+            <div class="flex">
+                <div class="labels">
+                    <label for="inicio">Início</label>
+                    <label for="fim">Fim</label>
+                    <label for="passo">Passo</label>
+                </div>
+                <div class="inputs">
+                    <input type="number" name="inicio" id="inicio">
+                    <input type="number" name="fim" id="fim">
+                    <input type="number" name="passo" id="passo" placeholder="1" min="1">
+                </div>
+            </div>
+            <button onclick="contar()">Contar</button>
+        </div>
+        <div id="resultados">
+            <p id="resultado">
+
+            </p>
+        </div>
+    </main>
+
+    <footer>@Rafael Matiola feat Curso em Vídeo</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
