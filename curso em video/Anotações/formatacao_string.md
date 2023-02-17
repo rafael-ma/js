@@ -13,7 +13,7 @@ Com _template strings_, você tem a capacidade de usar uma forma mais simples e 
 >"A soma entrre 1 e 1 é 2"
 ```
 
-Para contar quants caracteres contém em uma string
+Para contar quantos caracteres contém em uma string
 ```js
 s.length
 ```
